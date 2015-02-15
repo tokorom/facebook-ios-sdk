@@ -36,6 +36,8 @@ Pod::Spec.new do |s|
 
   s.weak_frameworks = "Accounts", "CoreLocation", "Social", "Security", "QuartzCore", "CoreGraphics", "UIKit", "Foundation", "AudioToolbox"
 
+  s.library = "sqlite3"
+
   s.requires_arc = false
 
   # Note the prepare_command is not run against pods installed with the :path option (i.e., a local pod)
